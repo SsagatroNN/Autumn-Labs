@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IAC Development Tools and Dependencies
 
 Welcome to Lab 0 of Autumn Term [Instruction Architectures and Compilers](http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=ELEC50010&s=I2) (IAC).
@@ -85,3 +86,6 @@ logged to the terminal, showing you what the script is doing.
 
 By looking at the scripts in the [./tools](tools) directory, you should be able
 to find the relevant section based on the last outputted log message.
+=======
+# Autumn-Labs
+>>>>>>> 7b28e2a (Initial commit)
