@@ -8,6 +8,8 @@
 This package is written to support a second year module on Electronics & Information Engineering (EIE)
 at Imperial College. The module is on the design of the RISC V CPU.
 */
+#include <string>
+#include <iostream>
 
 using namespace std;
 using std::string;
@@ -1010,7 +1012,7 @@ void ack( ) {
   char receivedString[80];
   char finalChar = '\n';
   do {
-      serial.readString(receivedString, finalChar, 80, 0);
+      serial.readString(receivedString, finalChar, 80, 200);
     } while (receivedString[0]!='$');
 }
 
@@ -1040,7 +1042,9 @@ int vbdOpen() {
     printf ("\n ** Connected to Vbuddy via: %s\n", port_name);
     // clear Vbuddy screen
     serial.flushReceiver();
+    std::cout << "flushing done" << std::endl;
     vbdClear();
+    std::cout << "clear done" << std::endl;
   }
   return(errorOpening);
 }
