@@ -1,6 +1,6 @@
 //mandatory header files used for all c++ files
 
-#include "./obj_dir/Vcounter.h"
+#include "Vcounter.h"
 #include "verilated.h"
 #include "verilated_vcd_c.h"
 #include "vbuddy.cpp"
