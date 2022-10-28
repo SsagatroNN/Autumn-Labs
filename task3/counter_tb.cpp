@@ -48,7 +48,7 @@ int main(int argc, char **argv, char **env){
         vbdHex(1, int(top->count) & 0xF);
         
         // vbdPlot(int(top->count), 0, 255);
-        vbdSetMode(1);
+        vbdSetMode(0);
         vbdCycle(i+1);
         //----- end of vbuddy output section
         
