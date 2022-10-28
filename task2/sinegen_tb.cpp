@@ -43,7 +43,8 @@ int main(int argc, char **argv, char **env){
         }
 
 
-        sinegenone->phase = vbdValue();
+        sinegenone->phase = (vbdValue()*1.275);
+        //sinegenone->phase = vbdValue();
 
         //+++++ send count value to vbuddy
         vbdPlot(int(sinegenone->dout0), 0, 255);
