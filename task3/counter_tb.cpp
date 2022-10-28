@@ -29,8 +29,8 @@ int main(int argc, char **argv, char **env){
     //intitialize simulation inputs
 
     top->clk =1;
-    top->rst=1;
-    top->en=0;
+    top->rst=0;
+    
 
     //loop to run for many clock cycles:
 
@@ -48,13 +48,12 @@ int main(int argc, char **argv, char **env){
         vbdHex(1, int(top->count) & 0xF);
         vbdCycle(i+1);
         //----- end of vbuddy output section
-
+        top->en = vbdFlag();
         //adjust rst and en signals
         //with counting stopping at a count of 9
 
         // top->rst = (i<2) | (i==19);
         // top->en = ((14>i) && (i>=5)) || i > 15 ;
-        top->en = vbdFlag();
         if (Verilated::gotFinish()) exit(0);
 
     }
