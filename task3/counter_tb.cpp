@@ -49,6 +49,11 @@ int main(int argc, char **argv, char **env){
         vbdCycle(i+1);
         //----- end of vbuddy output section
         top->en = vbdFlag();
+
+        if (top->en == 0){
+            top->count = top->count - 1;
+        }
+        
         //adjust rst and en signals
         //with counting stopping at a count of 9
 
