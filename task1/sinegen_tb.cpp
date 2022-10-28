@@ -34,7 +34,7 @@ int main(int argc, char **argv, char **env){
 
     //loop to run for many clock cycles:
 
-    for(i = 0; i < 300; i++){
+    for(i = 0; i < 1000000; i++){
 
         for (clk = 0; clk < 2; clk++){
             tfp->dump (2 * i + clk);
@@ -45,16 +45,14 @@ int main(int argc, char **argv, char **env){
 
 
         //+++++ send count value to vbuddy
-        vbdPlot();
+        vbdPlot(int(sinegenone->dout), 0, 255);
         vbdCycle( i + 1);
         //----- end of vbuddy output section
 
         //adjust rst and en signals
         //with counting ssinegenoneping at a count of 9
 
-        sinegenone->rst = (i<2) | (i==19);
-        sinegenone->en = ((14>i) && (i>=5)) || i > 15 ;
-        if (Verilated::gotFinish()) exit(0);
+        if (Verilated::gotFinish() || vbdGetkey() == 'q') exit(0);
 
     }
 

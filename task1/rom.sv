@@ -10,12 +10,12 @@ module rom #(
 
     logic [DATA_WIDTH-1:0] rom_array [2**ADDRESS_WIDTH-1:0];
 
-    intial begin 
+    initial begin 
         $display("Loading rom.");
         $readmemh("sinerom.mem", rom_array);
     end;
 
-    always_ff @(posedge ck) 
+    always_ff @(posedge clk) 
     // output is synchronus 
     dout <= rom_array [addr];
 

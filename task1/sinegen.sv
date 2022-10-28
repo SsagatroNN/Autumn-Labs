@@ -1,11 +1,11 @@
 module sinegen#(
-    parameter A_WIDTH = 8;
-              D_WIDTH = 8;
+    parameter A_WIDTH = 8,
+              D_WIDTH = 8
 )(
+    //signals
     input logic         clk,
     input logic         rst,
     input logic         en,
-    input logic [D_WIDTH-1:0] incr,
     output logic [D_WIDTH-1:0] dout
 );
 
@@ -15,7 +15,6 @@ counter addrCounter (
     .clk(clk),
     .rst (rst),
     .en (en),
-    .incr (incr),
     .count (address)
 );
 
