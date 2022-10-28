@@ -43,7 +43,7 @@ int main(int argc, char **argv, char **env){
         }
 
 
-        sinegenone->phase = (vbdValue()*1.275);
+        sinegenone->phase = (vbdValue()*1.27);
         //sinegenone->phase = vbdValue();
 
         //+++++ send count value to vbuddy
@@ -56,7 +56,7 @@ int main(int argc, char **argv, char **env){
         //with counting ssinegenoneping at a count of 9
 
         if (Verilated::gotFinish() || vbdGetkey() == 'q') exit(0);
-        
+
 
     }
 
