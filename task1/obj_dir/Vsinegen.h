@@ -28,6 +28,7 @@ class Vsinegen VL_NOT_FINAL : public VerilatedModel {
     VL_IN8(&clk,0,0);
     VL_IN8(&rst,0,0);
     VL_IN8(&en,0,0);
+    VL_IN8(&incr,7,0);
     VL_OUT8(&dout,7,0);
 
     // CELLS
