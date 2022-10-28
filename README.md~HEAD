@@ -6,11 +6,7 @@
 
 
 ## Lab 1 – Learning System Verilog with Verilator and Vbuddy
-<<<<<<< HEAD
 ##### *Peter Cheung, v1.1 - 19 Oct 2022*
-=======
-##### *Peter Cheung, v1.2 - 28 Oct 2022*
->>>>>>> beb216248b1ef2afb27547e801bfa62a788d8b66
 
 ---
 ## Objectives
@@ -251,29 +247,7 @@ The rotary encodes (EC11) provides input from Vbuddy to the Verilator simulation
 
 **Step 1: Loadable counter**
 
-<<<<<<< HEAD
 Copy across to the task3 foler the required files: **_counter.sv, counter_tb.cpp, vbuddy.cpp, doit.sh_** and **_vbuddy.cfg_**.  
-=======
-Copy across to the task3 foler the required files: **_counter_tb.cpp, vbuddy.cpp, doit.sh_** and **_vbuddy.cfg_**, but not **_counter.sv_**. Instead use a modified version of **_counter.sv_** shown below.  This version replaces the enable signal **_en_** with a load signal **_ld_**. When **_ld_** is asserted, the value **_v_** is loaded into the counter as a pre-set value. 
-
-```verilog
-module counter #(
-  parameter WIDTH = 8
-)(
-  // interface signals
-  input  logic             clk,      // clock 
-  input  logic             rst,      // reset 
-  input  logic             ld,       // load counter from data
-  input  logic [WIDTH-1:0] v,        // value to preload
-  output logic [WIDTH-1:0] count     // count output
-);
-
-always_ff @ (posedge clk)
-  if (rst) count <= {WIDTH{1'b0}};
-  else     count <= ld ? v : count + {{WIDTH-1{1'b0}},1'b1}
-endmodule
-```
->>>>>>> beb216248b1ef2afb27547e801bfa62a788d8b66
 
 Vbuddy’s flag register has two modes of operation.  The default mode is **TOGGLE**, which means that everything the rotary encoder switch is pressed, the flag will toggle as indicated at the bottom of the TFT screen.  
 

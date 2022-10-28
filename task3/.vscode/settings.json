@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "files.associations": {
         "array": "cpp",
         "atomic": "cpp",
@@ -13,6 +14,37 @@
         "compare": "cpp",
         "concepts": "cpp",
         "condition_variable": "cpp",
+=======
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "chrono": "cpp",
+        "unordered_map": "cpp",
+        "string": "cpp",
+        "__bit_reference": "cpp",
+        "__bits": "cpp",
+        "__config": "cpp",
+        "__debug": "cpp",
+        "__errc": "cpp",
+        "__hash_table": "cpp",
+        "__locale": "cpp",
+        "__mutex_base": "cpp",
+        "__node_handle": "cpp",
+        "__nullptr": "cpp",
+        "__split_buffer": "cpp",
+        "__string": "cpp",
+        "__threading_support": "cpp",
+        "__tuple": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "bitset": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "complex": "cpp",
+        "concepts": "cpp",
+>>>>>>> beb216248b1ef2afb27547e801bfa62a788d8b66
         "cstdarg": "cpp",
         "cstddef": "cpp",
         "cstdint": "cpp",
@@ -22,6 +54,7 @@
         "ctime": "cpp",
         "cwchar": "cpp",
         "cwctype": "cpp",
+<<<<<<< HEAD
         "deque": "cpp",
         "list": "cpp",
         "map": "cpp",
@@ -46,10 +79,16 @@
         "utility": "cpp",
         "fstream": "cpp",
         "initializer_list": "cpp",
+=======
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "ios": "cpp",
+>>>>>>> beb216248b1ef2afb27547e801bfa62a788d8b66
         "iosfwd": "cpp",
         "iostream": "cpp",
         "istream": "cpp",
         "limits": "cpp",
+<<<<<<< HEAD
         "mutex": "cpp",
         "new": "cpp",
         "numbers": "cpp",
@@ -61,5 +100,29 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "typeinfo": "cpp"
+=======
+        "locale": "cpp",
+        "memory": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "optional": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "variant": "cpp",
+        "vector": "cpp",
+        "__functional_base": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "utility": "cpp"
+>>>>>>> beb216248b1ef2afb27547e801bfa62a788d8b66
     }
 }

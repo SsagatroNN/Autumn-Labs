@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "files.associations": {
         "array": "cpp",
         "atomic": "cpp",
@@ -61,5 +62,11 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "typeinfo": "cpp"
+=======
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "chrono": "cpp",
+        "unordered_map": "cpp"
+>>>>>>> beb216248b1ef2afb27547e801bfa62a788d8b66
     }
 }

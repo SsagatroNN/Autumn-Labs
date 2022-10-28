@@ -13,7 +13,7 @@ always_ff @(posedge clk, posedge rst)
 	if(rst) count <= {WIDTH{1'b0}};
 
 	else if (en) count <= count + {{WIDTH-1{1'b0}}, en};
-	// else if (!(en)) count <= count - {{WIDTH-1{1'b0}}, en};
+	else if (!(en)) count <= count - {{WIDTH-1{1'b0}}, en};
 	
 endmodule
 

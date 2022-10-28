@@ -46,19 +46,18 @@ int main(int argc, char **argv, char **env){
         vbdHex(3, (int(top->count) >> 8) & 0xF);
         vbdHex(2, (int(top->count) >> 4) & 0xF);
         vbdHex(1, int(top->count) & 0xF);
+        
+        // vbdPlot(int(top->count), 0, 255);
+        vbdSetMode(1);
         vbdCycle(i+1);
         //----- end of vbuddy output section
+        
         top->en = vbdFlag();
 
-        if (top->en == 0){
-            top->count = top->count - 1;
-        }
-        
-        //adjust rst and en signals
-        //with counting stopping at a count of 9
+        // if (top->en == 0){
+        //     top->count = top->count - 1;
+        // }
 
-        // top->rst = (i<2) | (i==19);
-        // top->en = ((14>i) && (i>=5)) || i > 15 ;
         if (Verilated::gotFinish()) exit(0);
 
     }
