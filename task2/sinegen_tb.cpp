@@ -56,6 +56,7 @@ int main(int argc, char **argv, char **env){
         //with counting ssinegenoneping at a count of 9
 
         if (Verilated::gotFinish() || vbdGetkey() == 'q') exit(0);
+        
 
     }
 
