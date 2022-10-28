@@ -1,4 +1,4 @@
-#include "./obj_dir/Vtop.h"
+#include "Vtop.h"
 #include "verilated.h"
 #include "verilated_vcd_c.h"
 #include "vbuddy.cpp"
