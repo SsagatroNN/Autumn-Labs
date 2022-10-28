@@ -52,11 +52,17 @@ int main(int argc, char **argv, char **env){
         vbdCycle(i+1);
         //----- end of vbuddy output section
         
-        top->en = vbdFlag();
 
         // if (top->en == 0){
         //     top->count = top->count - 1;
         // }
+
+        if (vbdFlag()){
+            top->v = vbdValue();
+            top->ld = 1;
+        }else {
+            top->ld = 0;
+        }
 
         if (Verilated::gotFinish()) exit(0);
 
