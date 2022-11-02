@@ -1,6 +1,7 @@
+#include "Vsigdelay.h"
 #include "verilated.h"
 #include "verilated_vcd_c.h"
-#include "Vsigdelay.h"
+
 
 #include "vbuddy.cpp"     // include vbuddy code
 #define MAX_SIM_CYC 1000000
@@ -9,7 +10,7 @@
 
 int main(int argc, char **argv, char **env) {
   int simcyc;     // simulation clock count
-  int tick;       // each clk cycle has two ticks for two edges
+  int tick;      // each clk cycle has two ticks for two edges
 
   Verilated::commandArgs(argc, argv);
   // init top verilog instance
