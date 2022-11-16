@@ -1,6 +1,6 @@
 #include "verilated.h"
 #include "verilated_vcd_c.h"
-#include "Vtop.h"
+#include "Vdelay.h"
 
 #include "vbuddy.cpp"     // include vbuddy code
 #define MAX_SIM_CYC 100000
@@ -12,7 +12,7 @@ int main(int argc, char **argv, char **env) {
 
   Verilated::commandArgs(argc, argv);
   // init top verilog instance
-  Vtop * top = new Vtop;
+  Vdelay * top = new Vdelay;
   // init trace dump
   Verilated::traceEverOn(true);
   VerilatedVcdC* tfp = new VerilatedVcdC;
