@@ -30,7 +30,7 @@ int main(int argc, char **argv, char **env) {
   top->rst = 0;
   top->en = 0;
   top->N = vbdValue();
-  
+  int x = 0;
   // run simulation for MAX_SIM_CYC clock cycles
   for (simcyc=0; simcyc<MAX_SIM_CYC; simcyc++) {
     // dump variables into VCD file and toggle clock
@@ -47,8 +47,7 @@ int main(int argc, char **argv, char **env) {
     top->en = (simcyc > 2);
     top->N = vbdValue();
 
-    int x = 0;
-
+    
     if (top->dout + x == 255){
       vbdInitWatch();
     }
